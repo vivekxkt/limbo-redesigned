@@ -57,8 +57,8 @@ export const useGsapScroll = (ready: boolean) => {
 
         // Initial dark cinematic state
         .to(".hero-video", {
-          scale: 0.90,
-          yPercent: 4,
+          scale: 1,
+          yPercent: -2,
           filter: "grayscale(100%) contrast(118%) brightness(0.65)",
           ease: "none",
         }, 0)

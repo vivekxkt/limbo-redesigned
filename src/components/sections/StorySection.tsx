@@ -14,9 +14,13 @@ export const StorySection = () => {
       backgroundImage: `url('/chap-2_upscaled.png')`,
     }}
   />
+  
 
   {/* Full black mask (STARTS FULLY BLACK) */}
   <div className="story-mask absolute inset-0 -z-10 bg-black" />
+
+  {/* Bottom fade into next section */}
+<div className="absolute inset-x-0 bottom-0 h-64 md:h-20 z-0 bg-gradient-to-b from-transparent via-black/70 to-black" />
 
   <div className="story-wrapper relative z-10 mx-auto w-full max-w-6xl px-6 md:px-12">
     <div className="grid gap-16 md:grid-cols-2 items-center">

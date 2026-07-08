@@ -7,7 +7,7 @@ export const HeroSection = () => {
     >
       {/* Background Image */}
       <div
-        className="hero-video absolute inset-0 bg-cover bg-center opacity-45"
+        className="hero-video absolute inset-0 bg-cover bg-center opacity-85"
         style={{
           backgroundImage: `url('/hero_upscaled.png')`,
         }}

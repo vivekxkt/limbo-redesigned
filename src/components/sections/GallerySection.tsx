@@ -21,13 +21,13 @@ export const GallerySection = () => {
             <article
               key={item.title}
               data-cursor="hover"
-              className="gallery-card group relative h-[62vh] w-[78vw] shrink-0 overflow-hidden rounded-2xl border border-white/15 md:h-[68vh] md:w-[38vw]"
+              className="gallery-card group relative h-[75vh] w-[80vw]  rounded-2xl b"
             >
               <div className="h-full w-full overflow-hidden">
                 <img
   src={item.image}
   alt={item.title}
-  className="gallery-image h-full w-full object-cover object-[50%_60%] saturate-[0.65] transition duration-700 group-hover:saturate-100"
+  className="gallery-image h-full w-full object-cover object-center saturate-[0.65] transition duration-700 group-hover:saturate-100"
 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/25 to-transparent" />

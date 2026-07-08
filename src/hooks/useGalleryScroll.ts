@@ -30,23 +30,21 @@ export const useGalleryScroll = (ready: boolean) => {
 
       // Each image drifts opposite the track for a subtle depth effect
       gsap.utils.toArray<HTMLElement>(".gallery-image").forEach((img) => {
-        gsap.fromTo(
-          img,
-          { scale: 1.25, xPercent: -6 },
-          {
-            scale: 1,
-            xPercent: 6,
-            ease: "none",
-            scrollTrigger: {
-              trigger: img,
-              containerAnimation: tween,
-              start: "left right",
-              end: "right left",
-              scrub: true,
-            },
-          }
-        );
-      });
+  gsap.fromTo(
+    img,
+    { xPercent: -3 },
+    {
+      xPercent: 3,
+      ease: "none",
+      scrollTrigger: {
+        trigger: img,
+        containerAnimation: tween,
+      
+        scrub: true,
+      },
+    }
+  );
+});
 
       // Cards fade/rise in as they enter the horizontal viewport
       gsap.utils.toArray<HTMLElement>(".gallery-card").forEach((card) => {
