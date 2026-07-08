@@ -45,10 +45,12 @@ export default function App() {
 
   useEffect(() => {
     document.body.classList.add("preloading");
+document.body.style.overflow = "hidden";
 
     const readyTimer = window.setTimeout(() => {
       setReady(true);
       document.body.classList.remove("preloading");
+document.body.style.overflow = "";
     }, 1700);
 
     return () => {
